@@ -4,7 +4,7 @@ const fs = require("fs");
 const rl = readline.createInterface({ input, output });
 const path = require('path');
 
-rl.question('Привет. напиши свой текст?\n', (answer) => {
+rl.question('Привет. напиши свой текст!\n', (answer) => {
   fs.writeFile(path.join(__dirname, 'text.txt'), answer + "\n", (err) => {
     if(err) throw err;
 });
